@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 100%;
+  height: 100vh;
+  background-color: #181818;
+  font-family: 'Roboto';
+
+  .chat-container {
+    height: 80%;
+    border-radius: 20px;
+    padding: 16px;
+    background-color: white;
+
+    .messages-container {
+      height: 90%;
+      overflow-y: auto;
+
+      .messages {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    
+    .send-msg-container {
+      display: flex;
+      align-items: flex-end;
+      height: 10%;
+
+      .text-input-container {
+        display: flex;
+        flex-grow: 1;
+
+        input {
+          width: 100%;
+          height: 40px;
+          border: none;
+          border-radius: 50px;
+          outline: none;
+          padding: 0px 16px;
+          background-color: #eeeeee;
+        }
+      }
+
+      .send-icon-container {
+        display: flex;
+        justify-content: flex-end;
+
+        .send-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          border: none;
+          border-radius: 50px;
+          margin-left: 6px;
+          cursor: pointer;
+          background-color: #25D366;
+
+          i {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
