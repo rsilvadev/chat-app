@@ -17,7 +17,7 @@ const App = () => {
 
   useEffect(() => {
     if(isUserSet) {
-      socket.current = io('ws://localhost:8000');
+      socket.current = io('163.172.164.215:8000');
   
       socket.current.emit('join', { name: user, room }, (error) => {
         console.log(`error joining chat: ${error}`);
